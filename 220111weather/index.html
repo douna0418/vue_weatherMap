@@ -10,6 +10,51 @@
     <script src="https://unpkg.com/vue@next"></script>
     <title>Taiwan Weather Map</title>
     <style>
+        :root {
+            --color_gold: #B99362;
+        }
+
+        body {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #222;
+            color: white;
+        }
+
+        table {
+            width: 80%;
+        }
+
+        table tr {
+            text-align: center;
+        }
+
+        table th {
+            border-bottom: 1px dashed white;
+            line-height: 1.1rem;
+        }
+
+        table th,
+        table td {
+            margin: 5%;
+            width: 20%
+        }
+
+        #map path {
+            stroke: white;
+            fill: transparent;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        #map path:hover {
+            fill: var(--color_gold);
+            transform: translateX(-0.5%) translateY(0.5%);
+        }
+
+        #weather {
+            margin-top: 5%;
+        }
 
     </style>
 </head>
